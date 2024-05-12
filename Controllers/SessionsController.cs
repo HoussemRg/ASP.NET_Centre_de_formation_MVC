@@ -49,9 +49,9 @@ namespace Centre_de_formation.Controllers
         // GET: Sessions/Create
         public IActionResult Create()
         {
-            ViewData["FormateurId"] = new SelectList(_context.Formateurs, "Id", "Id");
-            ViewData["FormationId"] = new SelectList(_context.Formations, "Id", "Id");
-            ViewData["SalleId"] = new SelectList(_context.Salles, "Id", "Id");
+            ViewData["Formateur"] = new SelectList(_context.Formateurs, "Id", "Nom");
+            ViewData["Formation"] = new SelectList(_context.Formations, "Id", "NomFormation");
+            ViewData["Salle"] = new SelectList(_context.Salles, "Id", "NumSalle");
             return View();
         }
 
@@ -71,6 +71,7 @@ namespace Centre_de_formation.Controllers
             ViewData["FormateurId"] = new SelectList(_context.Formateurs, "Id", "Id", session.FormateurId);
             ViewData["FormationId"] = new SelectList(_context.Formations, "Id", "Id", session.FormationId);
             ViewData["SalleId"] = new SelectList(_context.Salles, "Id", "Id", session.SalleId);
+            
             return View(session);
         }
 

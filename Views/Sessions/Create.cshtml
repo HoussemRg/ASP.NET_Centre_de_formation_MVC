@@ -21,8 +21,8 @@
                     <form asp-action="Create">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group my-2">                       
-                            <label asp-for="FormationId" class="control-label"></label>
-                            <select asp-for="FormationId" class="form-control" asp-items="ViewBag.FormationId"></select>    
+                            <label asp-for="Formation" class="control-label"></label>
+                            <select asp-for="Formation" class="form-control" asp-items="ViewBag.Formation"></select>    
                         </div>
                         <div class="form-group my-2">
                             <label asp-for="dateDebut" class="control-label">Date Debut</label>
@@ -30,8 +30,8 @@
                             <span asp-validation-for="dateDebut" class="text-danger"></span>
                         </div>
                         <div class="form-group my-2">
-                            <label asp-for="FormateurId" class="control-label"></label>
-                            <select asp-for="FormateurId" class="form-control" asp-items="ViewBag.FormateurId"></select>
+                            <label asp-for="Formateur" class="control-label"></label>
+                            <select asp-for="Formateur" class="form-control" asp-items="ViewBag.Formateur"></select>
                         </div>
                         <div class="form-group my-2">
                             <label asp-for="duree" class="control-label"></label>
@@ -39,8 +39,8 @@
                             <span asp-validation-for="duree" class="text-danger"></span>
                         </div>
                         <div class="form-group my-2">
-                            <label asp-for="SalleId" class="control-label"></label>
-                            <select asp-for="SalleId" class="form-control" asp-items="ViewBag.SalleId"></select>
+                            <label asp-for="Salle" class="control-label"></label>
+                            <select asp-for="Salle" class="form-control" asp-items="ViewBag.Salle"></select>
                         </div>
                         <div class="form-group text-center my-2 mb-0">
                             <input type="submit" value="Créer" class="btn text-white btn-info py-1 mt-3 my-2" />
