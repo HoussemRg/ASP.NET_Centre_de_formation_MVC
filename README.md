@@ -1,8 +1,5 @@
 <h1>🎓 Gestion de Centre de Formation</h1>
 
-<p>
-    <img src="https://cdn-icons-png.flaticon.com/512/1042/1042397.png" alt="Gestion de Centre de Formation"> <!-- Add your project banner or logo image here -->
-</p>
 
 <p>
     <strong>Gestion de Centre de Formation</strong> is a complete management system for training centers, developed with <strong>ASP.NET MVC</strong> and powered by <strong>MySQL</strong>. This application facilitates seamless management of courses, students, instructors, and more, offering a streamlined solution for handling the daily operations of a training center.
